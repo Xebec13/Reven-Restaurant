@@ -5,8 +5,10 @@ import { Nav, LandingPage } from "./components";
 
 const App = () => (
   <>
-    <Nav />
-    <LandingPage />
+    <div className="mainApp">
+      <LandingPage />
+      <Nav />
+    </div>
   </>
 );
 

@@ -1,46 +1,185 @@
 .landing-page-container {
-  padding: 1rem 2rem;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, auto);
   grid-template-areas:
-    "header header gallery gallery nav"
-    "header header restaurant-menu restaurant-menu nav"
-    "vip event restaurant-menu restaurant-menu nav"
-    "about about promotions promotions nav"
-    "reservations reservations reservations reservations nav"
-    "footer footer footer footer nav";
-  font-size: 3rem;
+    "header header gallery gallery"
+    "header header rmenu rmenu"
+    "vip event rmenu rmenu"
+    "reservations reservations reservations reservations"
+    "about about promotions promotions"
+    "footer footer footer footer";
+}
+.item {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.gallery {
+.item h1 {
+  font-size: clamp(4rem, 10vw, 10rem);
+}
+
+.item h2 {
+  font-size: clamp(2rem, 6vw, 7rem);
+}
+
+.item h3 {
+  font-size: clamp(1.2rem, 2vw, 5rem);
+}
+
+.item p {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+.item-1 {
+  grid-area: header;
+  background: hsl(
+    var(--bg-alabaster-h),
+    var(--bg-alabaster-s),
+    var(--bg-alabaster-l)
+  );
+}
+
+.item-2 {
   grid-area: gallery;
+  background: hsl(
+    var(--carolina-blue-h),
+    var(--carolina-blue-s),
+    var(--carolina-blue-l)
+  );
 }
 
-.restaurant-menu {
-  grid-area: restaurant-menu;
+.item-3 {
+  grid-area: rmenu;
+  background: hsl(
+    var(--light-coral-h),
+    var(--light-coral-s),
+    var(--light-coral-l)
+  );
 }
 
-.restaurant-event {
+.item-4 {
   grid-area: event;
+  background: hsl(
+    var(--columbia-blue-h),
+    var(--columbia-blue-s),
+    var(--columbia-blue-l)
+  );
 }
 
-.vip {
-  grid-area: vip;
-}
-
-.reservations {
+.item-5 {
   grid-area: reservations;
+  background: hsl(
+    var(--blue-munsell-h),
+    var(--blue-munsell-s),
+    var(--blue-munsell-l)
+  );
 }
 
-.about {
-  grid-area: about;
-}
-
-.promotions {
+.item-6 {
   grid-area: promotions;
+  background: hsl(
+    var(--misty-rose-h),
+    var(--misty-rose-s),
+    var(--misty-rose-l)
+  );
 }
 
-.footer {
+.item-7 {
+  grid-area: about;
+  background: hsl(
+    var(--cherry-blossom-pink-h),
+    var(--cherry-blossom-pink-s),
+    var(--cherry-blossom-pink-l)
+  );
+}
+
+.item-8 {
+  grid-area: vip;
+  background: hsl(
+    var(--tea-rose-red-h),
+    var(--tea-rose-red-s),
+    var(--tea-rose-red-l)
+  );
+}
+
+.item-9 {
   grid-area: footer;
+  background: hsl(var(--viridian-h), var(--viridian-s), var(--viridian-l));
+}
+
+.item-1:hover {
+  background: hsl(
+    var(--bg-alabaster-h),
+    var(--bg-alabaster-s),
+    calc(var(--bg-alabaster-l) - 10%)
+  );
+}
+
+.item-2:hover {
+  background: hsl(
+    var(--carolina-blue-h),
+    var(--carolina-blue-s),
+    calc(var(--carolina-blue-l) - 10%)
+  );
+}
+
+.item-3:hover {
+  background: hsl(
+    var(--light-coral-h),
+    var(--light-coral-s),
+    calc(var(--light-coral-l) - 10%)
+  );
+}
+
+.item-4:hover {
+  background: hsl(
+    var(--columbia-blue-h),
+    var(--columbia-blue-s),
+    calc(var(--columbia-blue-l) - 10%)
+  );
+}
+
+.item-5:hover {
+  background: hsl(
+    var(--blue-munsell-h),
+    var(--blue-munsell-s),
+    calc(var(--blue-munsell-l) - 10%)
+  );
+}
+
+.item-6:hover {
+  background: hsl(
+    var(--misty-rose-h),
+    var(--misty-rose-s),
+    calc(var(--misty-rose-l) - 10%)
+  );
+}
+
+.item-7:hover {
+  background: hsl(
+    var(--cherry-blossom-pink-h),
+    var(--cherry-blossom-pink-s),
+    calc(var(--cherry-blossom-pink-l) - 10%)
+  );
+}
+
+.item-8:hover {
+  background: hsl(
+    var(--tea-rose-red-h),
+    var(--tea-rose-red-s),
+    calc(var(--tea-rose-red-l) - 10%)
+  );
+}
+
+.item-9:hover {
+  background: hsl(
+    var(--viridian-h),
+    var(--viridian-s),
+    calc(var(--viridian-l) - 10%)
+  );
 }

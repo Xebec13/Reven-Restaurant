@@ -1,16 +1,67 @@
 :root {
-  --french-gray: #bcc4dbff;
-  --french-gray-2: #beb7c6ff;
-  --rose-quartz: #c0a9b0ff;
-  --cool-gray: #9c95b3ff;
-  --glaucous: #7880b5ff;
-  --glaucous-2: #7184bfff;
-  --glaucous-3: #6987c9ff;
-  --maya-blue: #6bbaecff;
+  /* Alabaster */
+  --bg-alabaster-h: 65;
+  --bg-alabaster-s: 20%;
+  --bg-alabaster-l: 90%;
+
+  /* Light Coral */
+  --light-coral-h: 355;
+  --light-coral-s: 79%;
+  --light-coral-l: 73%;
+
+  /* Cherry Blossom Pink */
+  --cherry-blossom-pink-h: 355;
+  --cherry-blossom-pink-s: 77%;
+  --cherry-blossom-pink-l: 80%;
+
+  /* Tea Rose Red */
+  --tea-rose-red-h: 358;
+  --tea-rose-red-s: 79%;
+  --tea-rose-red-l: 88%;
+
+  /* Misty Rose */
+  --misty-rose-h: 14;
+  --misty-rose-s: 44%;
+  --misty-rose-l: 89%;
+
+  /* Columbia Blue */
+  --columbia-blue-h: 197;
+  --columbia-blue-s: 35%;
+  --columbia-blue-l: 76%;
+
+  /* Carolina Blue */
+  --carolina-blue-h: 204;
+  --carolina-blue-s: 46%;
+  --carolina-blue-l: 62%;
+
+  /* Blue Munsell */
+  --blue-munsell-h: 191;
+  --blue-munsell-s: 29%;
+  --blue-munsell-l: 49%;
+
+  /* Viridian */
+  --viridian-h: 169;
+  --viridian-s: 34%;
+  --viridian-l: 38%;
+
+  /* Font Color */
+  --font-color-h: 180;
+  --font-color-s: 10%;
+  --font-color-l: 15%;
 }
 
 body {
   font-family: "Delius";
-  background: var(--rose-quartz);
+  background: hsl(
+    var(--bg-alabaster-h),
+    var(--bg-alabaster-s),
+    var(--bg-alabaster-l)
+  );
+  color: hsl(var(--font-color-h), var(--font-color-s), var(--font-color-l));
 }
 
+.mainApp {
+  padding: 1rem 3rem;
+  display: flex;
+  min-height: 100dvh;
+}
