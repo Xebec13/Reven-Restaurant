@@ -1,0 +1,46 @@
+.landing-page-container {
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "header header gallery gallery nav"
+    "header header restaurant-menu restaurant-menu nav"
+    "vip event restaurant-menu restaurant-menu nav"
+    "about about promotions promotions nav"
+    "reservations reservations reservations reservations nav"
+    "footer footer footer footer nav";
+  font-size: 3rem;
+}
+
+.gallery {
+  grid-area: gallery;
+}
+
+.restaurant-menu {
+  grid-area: restaurant-menu;
+}
+
+.restaurant-event {
+  grid-area: event;
+}
+
+.vip {
+  grid-area: vip;
+}
+
+.reservations {
+  grid-area: reservations;
+}
+
+.about {
+  grid-area: about;
+}
+
+.promotions {
+  grid-area: promotions;
+}
+
+.footer {
+  grid-area: footer;
+}

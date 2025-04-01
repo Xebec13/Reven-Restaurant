@@ -1,0 +1,16 @@
+:root {
+  --french-gray: #bcc4dbff;
+  --french-gray-2: #beb7c6ff;
+  --rose-quartz: #c0a9b0ff;
+  --cool-gray: #9c95b3ff;
+  --glaucous: #7880b5ff;
+  --glaucous-2: #7184bfff;
+  --glaucous-3: #6987c9ff;
+  --maya-blue: #6bbaecff;
+}
+
+body {
+  font-family: "Delius";
+  background: var(--rose-quartz);
+}
+
